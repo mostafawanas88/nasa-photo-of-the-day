@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import "./App.css";
 import Photo from "./components/Photo"
 import Header from "./components/Header"
 import Buttons from "./components/Buttons"
+import styled from "styled-components";
 
 function App() {
   const [picture, setPicture] = useState("");
@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
       getData()
     }, [])  
-    
+
     const hidePicture = () => {
       setPicture("");
     }
